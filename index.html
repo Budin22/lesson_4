@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson_4</title>
+    <style>
+        .sport {
+            color: cornflowerblue;
+            font-size: 24px;
+        }
+        .second {
+            font-size: 36px;
+        }
+        #fork {
+            color: crimson;
+            font-size: 18px;
+        }
+        ul li {
+            color: darkcyan;
+            font-size: 14px;
+        }
+        p a {
+            color: darkorchid;
+            font-size: 42px;
+        }
+        .first {
+            color: dimgray;
+            font-size: 22px;
+        }
+        #text {
+            color: gold;
+            font-size: 22px;
+        }
+        h1 {
+            color: indigo;
+        }
+        h2 {
+            color: rgb(15, 58, 122);
+            font-size: 28px;
+        }
+        p {
+            color: rgb(15, 58, 122);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Селекторы и их комбинации</h1>
+    <h2>Селектор елемента(тега)</h2>
+    <p>p{color: blue} - Использывует свойства ко всем заданым тегам к примеру "р"</p>
+    <h2>Селектор #id</h2>
+    <p>Селектор идентификатор должен быть уникальным и меняет свойства только с атрибутом id(a href="#" id="only")</p>
+    <h2>Селектор .class</h2>
+    <p>К тегу добавляется атрибут class, который позволяет менять свойства всех тегов с данным атрибутом (p class="all")</p>
+    <h2>Селекторы по нескольким класам(.class1.class2)</h2>
+    <p>Используется когда к одному тегу необходимо определить несколько классов(p class="two all")</p>
+    <p>С приоритетом к последнему позже написаному коду(ниже)</p>
+    <h2>Вложеные селекторы(class class)</h2>
+    <p>Создается стиль для тега только в том случае когда он находится внутри другого тега(p li)</p>
+    <p>Примеры
+        <ul>
+            <li class="sport">футбол</li>
+            <li id="fork">Теннис</li>
+            <li class="sport second">Хокей</li>
+            <li>Шахматы</li>
+            <li class="first">Стрельба с лука</li>
+        </ul>
+    </p>
+    <p class="sport second">Lorem ipsum dolor sit amet.<b>Lorem, ipsum dolor.</b>Lorem ipsum dolor sit.</p>
+    <p class="first">Lorem ipsum dolor sit.<a href="#" id="text">Lorem, ipsum.</a>Lorem ipsum dolor sit amet.</p>
+    <p class="sport">Lorem ipsum dolor sit <a href="#">Lorem, ipsum dolor.</a> amet consectetur adipisicing elit. Placeat vero asperiores fuga nisi eos, voluptatem minus sunt ut a obcaecati temporibus aliquid. Numquam, odio.</p>
+</body>
+</html>
